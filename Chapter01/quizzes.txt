@@ -1,0 +1,10 @@
+Quiz Check 1
+Q1. How does a scripting language like JS differ from a programming language like C#?
+A1. JS is interpreted (runs as you write it) while C# is compiled (converted to machine code first)
+Q2. What are the 3 core foundations upon which JS is built?
+A2. ECMAScript: The standard that is the core syntax and features of JS.
+    DOM (Document Object Model): An interface that allows JS to interact with and manipulate web page content.
+    BOM (Browser Object Model): Provides JS with the ability to interact with the browser itself, like handling the window or managing browser events.
+Q3. In client/server architecture, What is a client? What is a server?
+A3. Client: The client is the device or application (like a web browser) that requests services or resources from a server.
+    Server: The server is a powerful computer or program that provides services or resources (like web pages or data) to clients upon request.
