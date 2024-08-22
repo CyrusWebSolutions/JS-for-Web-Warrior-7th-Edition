@@ -8,3 +8,34 @@ A2. ECMAScript: The standard that is the core syntax and features of JS.
 Q3. In client/server architecture, What is a client? What is a server?
 A3. Client: The client is the device or application (like a web browser) that requests services or resources from a server.
     Server: The server is a powerful computer or program that provides services or resources (like web pages or data) to clients upon request.
+
+
+Quiz Check 2
+Q1. What HTML element is used to embed JS code within an HTML file?
+A1. <script></script>
+Q2. Provide the JS command to write the HTML content <h1>Plant Types</h1> to the web page.
+A2. document.write("<h1>Plant Types</h1>");
+Q3. Provide the code to write the text, "Major Page Heading" as JS block comment.
+A3. /* Major Page Heading */
+Q4. Provide the code to write the text, "Major Page Heading" as JS line comment.
+A4. //Major Page Heading
+
+Quiz Check 3
+Q1. What are the 3 JS keywords for declaring a variable?
+A1. const, let, var
+Q2. What is the difference between declaring and initializing a variable?
+A2. Declaring is just giving the variable name like let totalNum; while initializing a variable is both declaring
+the variable and giving it a value all on the same statement. let totalNum = 5;
+Q3. What is returned by the expression "100" + 10?
+A3. JS combines it to give 10010. It converts 10 from numeric to string and adds it to the end of "100"
+Q4. What is an event handler for?
+A4. In JS, and event handler is a function that runs in response to a users actions. If a user clicks an element
+that has onclick attribute, then an event can be handle in response to the click.
+
+Quiz Check 4
+Q1. Why should you place scripts at the end of an HTML document's body section?
+A1. Placing scripts at the end of an HTML document's body section allows the HTML content to load first, 
+    ensuring the page is visible and interactive before the JavaScript runs. This improves page
+    load speed and user experience by preventing the script from blocking the rendering of the page.
+Q2. How do you incorporate the contents of a JS source file into an HTML document?
+A2. By <script src=""></script> using the src attribute pointing to the file's location.

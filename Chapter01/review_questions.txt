@@ -1,0 +1,126 @@
+Ch.1 Review Questions
+
+Here’s the text from the image, formatted for easy review:
+
+---
+
+1. **A programming language like Java requires a(n) ______________.**
+   - a. interpreter
+   - b. Document Object Model
+   - c. compiler
+   - d. Browser Object Model
+
+2. **HTML is an example of a ______________.**
+   - a. programming language
+   - b. machine language
+   - c. scripting language
+   - d. markup language
+
+3. **The syntax specifications for JavaScript are defined in ______________.**
+   - a. HTML
+   - b. the Document Object Model
+   - c. the Browser Object Model
+   - d. ECMAScript
+
+4. **JavaScript is built upon ______________.**
+   - a. ECMAScript
+   - b. the Document Object Model
+   - c. the Browser Object Model
+   - d. ECMAScript, the Document Object Model, and the Browser Object Model
+
+5. **The specifications for the Document Object Model are determined by ______________.**
+   - a. each browser alone
+   - b. each device alone
+   - c. the World Wide Web Consortium (W3C)
+   - d. the European Computer Manufacturers Association (ECMA)
+
+6. **Which of the following is not a language used by web developers?**
+   - a. JavaScript
+   - b. HTML
+   - c. CSS
+   - d. machine code
+
+7. **A system consisting of a client and a server is known as a ______________.**
+   - a. mainframe topology
+   - b. double-system architecture
+   - c. two-tier system
+   - d. wide area network
+
+8. **What is usually the primary role of a client?**
+   - a. locating records that match a request
+   - b. heavy processing, such as calculations
+   - c. data storage
+   - d. the presentation of an interface to the user
+
+9. **Which of the following functions does the processing tier not handle in a three-tier client/server system?**
+   - a. processing and calculations
+   - b. reading and writing of information to the data storage tier
+   - c. the return of any information to the client tier
+   - d. data storage
+
+10. **Which of the following uses the correct case?**
+    - a. Document.write()
+    - b. document.write()
+    - c. document.Write()
+    - d. Document.Write()
+
+11. **Which of the following is not a valid identifier?**
+    - a. $InterestRate
+    - b. 2QInterest Rate
+    - c. interestRate
+    - d. _interestRate
+
+12. **When you assign a specific value to a variable on its creation, you ______________ it.**
+    - a. declare
+    - b. call
+    - c. assign
+    - d. initialize
+
+13. **Code that tells a browser what to do in response to a specific event on a specific element is called a(n) ______________.**
+    - a. method
+    - b. event handler
+    - c. response
+    - d. procedure
+
+14. **Which method displays a dialog box with an OK button?**
+    - a. document.write()
+    - b. document.writeln()
+    - c. window.alert()
+    - d. window.popup()
+
+15. **Which of the following is not a JavaScript keyword used to declare a variable?**
+    - a. variable
+    - b. var
+    - c. let
+    - d. const
+
+16. What potential problems can occur if you load a script prior to the page being entirely loaded by the browser?
+17. How can you make the browser not parse and load an external script file until after the page has loaded?
+18. When should you use an external JS file instead of embedding your JS code within the HTML?
+19. Provide the JS code to write the text "COpyright 2023" as a line comment. Provide the code to write the same text as a block comment.
+20. What is a library?
+
+
+ANSWERS
+
+1. c
+2. d
+3. d
+4. d
+5. c
+6. d
+7. c
+8. d
+9. d
+10. b
+11. b
+12. d
+13. b
+14. c
+15. a
+16. The script might run before the page elements are ready, causing errors.
+17. Use the defer or async attribute in the <script> tag.
+18. Use an external JS file when you want to reuse the code across multiple pages or keep your HTML clean.
+19. Line comment: // Copyright 2023
+    Block comment: /* Copyright 2023 */
+20. A library is a collection of pre-written code that you can use to perform common tasks, making development faster and easier.
