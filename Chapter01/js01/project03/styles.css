@@ -161,3 +161,20 @@ textarea {
      line-height: 30px;
      font-size: 20px;
   }
+
+  #submitMsg {
+    height: 30px;
+    color: yellow;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background: #082008;
+    border: 1px solid black;
+    display: none; /* Hide the message box initially */
+    margin: 0 auto; /* Center the message box */
+    width: 750px; /* Match the form's width */
+    box-sizing: border-box; /* Include padding and border in the element's width */
+}
+
+
+
