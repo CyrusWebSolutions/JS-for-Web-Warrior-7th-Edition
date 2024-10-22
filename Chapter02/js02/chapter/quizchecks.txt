@@ -1,0 +1,50 @@
+
+
+
+Quiz Check 1
+
+1. What is the difference between a named function and an anonymous function?
+
+
+2. What is a command block?
+
+
+3. Provide an expression to call the findSqr() function using 10 as the parameter value.
+
+
+4. What is the difference between the capture phase and the bubbling phase for an event occurring within a website?
+
+
+5. An HTML file contains the following tag:
+<input type="button" value="Submit" id="SubmitButton" />
+
+Provide the code to run the submitOrder() function in response to the user clicking this input button using the 
+following approaches: as a HTML attribute, as an object property entered as an event handler, 
+and as an event listener (during the bubbling phase).
+
+
+Quiz Check 2
+
+1. What is the difference between block scope and function scope?
+
+2. What is the scope of variables declared with the let keyword?
+
+3. What are the possible values for a Boolean variable?
+
+
+4. What is the difference between a strongly typed and a loosely typed language? Which is JavaScript?
+
+
+5. What is the escape sequence for the newline character?
+
+
+
+Quick Check 3
+1. What is the difference between a binary operator and a unary operator?
+
+2. How does JavaScript deal with code that performs arithmetic operations on string values?
+
+3. What is a comparison operator? What kind of value does it return?
+
+4. What is a falsy value? What are the six falsy values in JavaScript?
+

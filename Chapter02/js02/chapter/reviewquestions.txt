@@ -1,0 +1,147 @@
+Review Questions
+
+
+1. Function statements are always enclosed within opening and closing 
+curly braces in a structure known as a blank 1.
+
+conditional operator
+command block
+parameter list
+return statement
+
+
+2. Functions that are not named are called _____.
+
+empty functions
+closed functions
+local functions
+anonymous functions
+
+
+3. Variables declared with the let keyword _____.
+
+have block scope
+have function scope
+have values that cannot be changed once declared
+act the same as variables declared with the var keyword
+
+
+4. To return a value from a function, the last function statement must blank 1.
+
+contain the document.write() method
+contain the let keyword
+contain the return keyword
+contain the Return keyword
+
+
+5. Which of the following is a primitive data type in JavaScript?
+
+Boolean
+integer
+floating point
+logical
+
+
+6. Which of the following describes JavaScript?
+
+strongly typed
+statically typed
+loosely typed
+untyped
+
+
+7. Which of the following is an integer?
+
+−2.5
+6.02e23
+−11
+0.03
+
+
+8. Which of the following is a Boolean value?
+
+3.04
+true
+"Greece"
+6.02e23
+
+
+9. Which of the following creates an empty string?
+
+null
+undefined
+""
+0
+
+
+10. Which of the following is a valid JavaScript statement?
+
+document.write('Boston, MA is called 'Beantown.'')
+document.write("Boston, MA is called "Beantown."")
+document.write("Boston, MA is called 'Beantown."')
+document.write("Boston, MA is called 'Beantown.'")
+
+
+11. To run the showReport() function when an input button is clicked, 
+what attribute should be added to the HTML tag?
+
+onclick = "showReport"
+click = "showReport()"
+onclick = "showReport()"
+addEvent = showReport
+
+
+12. One advantage of event listeners over event handlers is thatblank 1.
+
+more than one function can be attached to the event
+event listeners work with local and global variables
+you can pass parameter values to event listeners
+event listeners work with mobile devices
+
+
+13. If x = 10, the value of y in the following expression isblank 1.
+
+let y = x--;
+
+9
+10
+11
+undefined
+
+
+14. If x = 10 and y = 20, the value of y in the following expression isblank 1.
+
+y /= x;
+
+1/2
+2
+10
+30
+
+
+15. If x = 5 the value of y in the following expression is blank 1.
+
+let y = (x === "5") ? 10 : 20;
+
+5
+10
+20
+undefined
+
+
+16. Write the code for a function named mod10() that has a single parameter 
+named x and returns the remainder of x divided by 10.
+
+17. Write the code for a function named calcRatio() that has three parameters 
+named x, y, and z and returns the sum of x and y with that sum divided by z.
+
+18. Explain the difference between a prefix and a postfix operator and provide
+an example of each.
+
+19. Provide an expression that tests whether x is greater than or equal to y and 
+returns the value of x if that condition is true and y if otherwise.
+
+20. Write code that attaches an event listener for the click event for an element 
+with the id “calc” that runs the function calcRatio() using 4, 8, and 3 as the 
+parameter values. (Hint: You will have to use an anonymous function within the 
+event listener.)
