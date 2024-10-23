@@ -4,15 +4,29 @@
 Quiz Check 1
 
 1. What is the difference between a named function and an anonymous function?
+A named function has a specific name and can be reused or called by that name.
+An anonymous function does not have a name and is often used where functions 
+are passed as arguments or assigned to variables and used in one time situations
+like event listeners.
+
 
 
 2. What is a command block?
+A command block is a group of code statements enclosed in curly braces {}, used to 
+define a block of code for functions, loops, or conditionals.
+
 
 
 3. Provide an expression to call the findSqr() function using 10 as the parameter value.
+findSqr(10);
+
 
 
 4. What is the difference between the capture phase and the bubbling phase for an event occurring within a website?
+In the capture phase, the event is handled starting from the outermost element (like the document or window) and moves 
+down to the target element.
+In the bubbling phase, the event starts at the target element and bubbles up through its parent elements.
+
 
 
 5. An HTML file contains the following tag:
@@ -21,30 +35,71 @@ Quiz Check 1
 Provide the code to run the submitOrder() function in response to the user clicking this input button using the 
 following approaches: as a HTML attribute, as an object property entered as an event handler, 
 and as an event listener (during the bubbling phase).
+As an HTML attribute:
+html
+<input type="button" value="Submit" id="SubmitButton" onclick="submitOrder()" />
+As an object property:
+javascript
+document.getElementById('SubmitButton').onclick = submitOrder;
+As an event listener (bubbling phase):
+javascript
+document.getElementById('SubmitButton').addEventListener('click', submitOrder);
 
 
 Quiz Check 2
 
 1. What is the difference between block scope and function scope?
+Block scope (with let and const): Variables are only accessible within the block {} they are declared in.
+Function scope (with var): Variables are accessible throughout the entire function, even if declared inside a block.
+
+
 
 2. What is the scope of variables declared with the let keyword?
+Variables declared with let have block scope, meaning they are only accessible within the block they are defined in.
+
+
 
 3. What are the possible values for a Boolean variable?
+The possible values are true and false.
+
 
 
 4. What is the difference between a strongly typed and a loosely typed language? Which is JavaScript?
+Strongly typed: Variable types are fixed and strictly enforced (e.g., Java).
+Loosely typed: Variable types can change dynamically (e.g., JavaScript).
+JavaScript is loosely typed.
 
 
 5. What is the escape sequence for the newline character?
-
+The escape sequence for a newline character is \n.
 
 
 Quick Check 3
 1. What is the difference between a binary operator and a unary operator?
+A binary operator works with two operands (e.g., a + b).
+A unary operator works with one operand (e.g., ++a).
+
+
 
 2. How does JavaScript deal with code that performs arithmetic operations on string values?
+JavaScript tries to convert string values to numbers for arithmetic operations. If conversion fails, 
+it results in NaN (Not a Number).
+
+
 
 3. What is a comparison operator? What kind of value does it return?
+Comparison operator:
+
+A comparison operator compares two values (e.g., ==, ===, <, >). It returns a Boolean value, either true or false.
+
 
 4. What is a falsy value? What are the six falsy values in JavaScript?
-
+Falsy values in JavaScript:
+A falsy value is treated as false in a Boolean context.
+The six falsy values are:
+false
+0
+"" (empty string)
+null
+undefined
+NaN (Not a Number)

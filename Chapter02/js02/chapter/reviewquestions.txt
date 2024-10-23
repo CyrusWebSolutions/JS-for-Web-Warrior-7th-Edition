@@ -1,8 +1,10 @@
 Review Questions
 
 
-1. Function statements are always enclosed within opening and closing 
-curly braces in a structure known as a blank 1.
+1. Function statements are always enclosed within opening and closing curly braces in a structure known as a:
+Answer: command block
+Explanation: A command block is a group of code statements enclosed within {}.
+Choices:
 
 conditional operator
 command block
@@ -10,7 +12,10 @@ parameter list
 return statement
 
 
-2. Functions that are not named are called _____.
+2. Functions that are not named are called:
+Answer: anonymous functions
+Explanation: Anonymous functions don’t have a name and are often used where functions are passed as arguments or assigned to variables.
+Choices:
 
 empty functions
 closed functions
@@ -18,7 +23,10 @@ local functions
 anonymous functions
 
 
-3. Variables declared with the let keyword _____.
+3. Variables declared with the let keyword:
+Answer: have block scope
+Explanation: Variables declared with let are confined to the block {} where they are defined.
+Choices:
 
 have block scope
 have function scope
@@ -26,7 +34,10 @@ have values that cannot be changed once declared
 act the same as variables declared with the var keyword
 
 
-4. To return a value from a function, the last function statement must blank 1.
+4. To return a value from a function, the last function statement must:
+Answer: contain the return keyword
+Explanation: The return keyword is used to send a value back from the function to where it was called.
+Choices:
 
 contain the document.write() method
 contain the let keyword
@@ -34,7 +45,10 @@ contain the return keyword
 contain the Return keyword
 
 
-5. Which of the following is a primitive data type in JavaScript?
+5. Which of the following is a primitive data type in JavaScript?:
+Answer: Boolean
+Explanation: Boolean is a primitive data type representing true or false.
+Choices:
 
 Boolean
 integer
@@ -42,7 +56,10 @@ floating point
 logical
 
 
-6. Which of the following describes JavaScript?
+6. Which of the following describes JavaScript?:
+Answer: loosely typed
+Explanation: JavaScript allows variables to hold any type of value, and their types can change dynamically.
+Choices:
 
 strongly typed
 statically typed
@@ -50,7 +67,10 @@ loosely typed
 untyped
 
 
-7. Which of the following is an integer?
+7. Which of the following is an integer?:
+Answer: −11
+Explanation: An integer is a whole number, and −11 is the only whole number in the list.
+Choices:
 
 −2.5
 6.02e23
@@ -58,7 +78,10 @@ untyped
 0.03
 
 
-8. Which of the following is a Boolean value?
+8. Which of the following is a Boolean value?:
+Answer: true
+Explanation: Boolean values in JavaScript are either true or false.
+Choices:
 
 3.04
 true
@@ -66,7 +89,10 @@ true
 6.02e23
 
 
-9. Which of the following creates an empty string?
+9. Which of the following creates an empty string?:
+Answer: ""
+Explanation: "" is an empty string, representing no characters.
+Choices:
 
 null
 undefined
@@ -74,16 +100,21 @@ undefined
 0
 
 
-10. Which of the following is a valid JavaScript statement?
+10. Which of the following is a valid JavaScript statement?:
+Answer: document.write("Boston, MA is called 'Beantown.'")
+Explanation: The correct statement uses double quotes around the entire string and single quotes within it.
+Choices:
 
 document.write('Boston, MA is called 'Beantown.'')
 document.write("Boston, MA is called "Beantown."")
-document.write("Boston, MA is called 'Beantown."')
+document.write("Boston, MA is called 'Beantown.")
 document.write("Boston, MA is called 'Beantown.'")
 
 
-11. To run the showReport() function when an input button is clicked, 
-what attribute should be added to the HTML tag?
+11. To run the showReport() function when an input button is clicked, what attribute should be added to the HTML tag?:
+Answer: onclick = "showReport()"
+Explanation: onclick is the attribute that triggers the function when the button is clicked.
+Choices:
 
 onclick = "showReport"
 click = "showReport()"
@@ -91,7 +122,10 @@ onclick = "showReport()"
 addEvent = showReport
 
 
-12. One advantage of event listeners over event handlers is thatblank 1.
+12. One advantage of event listeners over event handlers is that:
+Answer: more than one function can be attached to the event
+Explanation: addEventListener allows attaching multiple functions to the same event.
+Choices:
 
 more than one function can be attached to the event
 event listeners work with local and global variables
@@ -99,9 +133,10 @@ you can pass parameter values to event listeners
 event listeners work with mobile devices
 
 
-13. If x = 10, the value of y in the following expression isblank 1.
-
-let y = x--;
+13. If x = 10, the value of y in the following expression is:
+Answer: 10
+Explanation: In let y = x--, y is assigned the value of x (10) before x is decremented.
+Choices:
 
 9
 10
@@ -109,9 +144,10 @@ let y = x--;
 undefined
 
 
-14. If x = 10 and y = 20, the value of y in the following expression isblank 1.
-
-y /= x;
+14. If x = 10 and y = 20, the value of y in the following expression is: y /= x;
+Answer: 2
+Explanation: y /= x divides y by x, so y = 20 / 10, which equals 2.
+Choices:
 
 1/2
 2
@@ -119,9 +155,10 @@ y /= x;
 30
 
 
-15. If x = 5 the value of y in the following expression is blank 1.
-
-let y = (x === "5") ? 10 : 20;
+15. If x = 5 the value of y in the following expression is: let y = (x === "5") ? 10 : 20;
+Answer: 20
+Explanation: In the ternary operation (x === "5") ? 10 : 20, x is not strictly equal to the string "5", so y is 20.
+Choices:
 
 5
 10
@@ -129,19 +166,50 @@ let y = (x === "5") ? 10 : 20;
 undefined
 
 
-16. Write the code for a function named mod10() that has a single parameter 
-named x and returns the remainder of x divided by 10.
+16. Write the code for a function named mod10() that has a single parameter named x and returns the remainder of x divided by 10:
+Answer:
+javascript
+function mod10(x) {
+  return x % 10;
+}
+Explanation: This function uses the modulus operator % to return the remainder when x is divided by 10.
 
-17. Write the code for a function named calcRatio() that has three parameters 
-named x, y, and z and returns the sum of x and y with that sum divided by z.
 
-18. Explain the difference between a prefix and a postfix operator and provide
-an example of each.
+17. Write the code for a function named calcRatio() that has three parameters named x, y, and z and returns the 
+sum of x and y with that sum divided by z:
+Answer:
+javascript
+function calcRatio(x, y, z) {
+  return (x + y) / z;
+}
+Explanation: The function adds x and y, then divides the result by z.
 
-19. Provide an expression that tests whether x is greater than or equal to y and 
-returns the value of x if that condition is true and y if otherwise.
 
-20. Write code that attaches an event listener for the click event for an element 
-with the id “calc” that runs the function calcRatio() using 4, 8, and 3 as the 
-parameter values. (Hint: You will have to use an anonymous function within the 
-event listener.)
+18. Explain the difference between a prefix and a postfix operator and provide an example of each:
+Answer:
+Prefix (++x): Increases the value before using it.
+Postfix (x++): Increases the value after using it.
+Explanation: Examples:
+javascript
+let x = 5;
+let y = ++x; // y is 6, x is 6
+let z = x++; // z is 6, x is 7
+
+
+19. Provide an expression that tests whether x is greater than or equal to y and returns the value of x if that condition is 
+true and y if otherwise:
+Answer:
+javascript
+x >= y ? x : y;
+Explanation: This is a ternary operator that returns x if x is greater than or equal to y; otherwise, it returns y.
+
+
+20. Write code that attaches an event listener for the click event for an element with the id “calc” that runs the 
+function calcRatio() using 4, 8, and 3 as the parameter values:
+Answer:
+javascript
+document.getElementById('calc').addEventListener('click', function() {
+  calcRatio(4, 8, 3);
+});
+Explanation: This code attaches an event listener that runs the calcRatio function when the element with the id 
+calc is clicked. It uses an anonymous function to pass the specific values.
