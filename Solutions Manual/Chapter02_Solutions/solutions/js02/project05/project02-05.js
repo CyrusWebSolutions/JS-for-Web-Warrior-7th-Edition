@@ -1,8 +1,10 @@
 /*    JavaScript 7th Edition
       Chapter 2
-      Hands-on Project 2-5: Completed
+      Project 02-05
 
       Application to create an online calculator
+      Author: 
+      Date:   
 
       Filename: project02-05.js
  */

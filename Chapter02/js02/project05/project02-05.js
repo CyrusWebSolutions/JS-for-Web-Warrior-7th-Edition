@@ -1,6 +1,6 @@
 /*    JavaScript 7th Edition
       Chapter 2
-      Project 02-05
+      Hands-on Project 2-5: Completed
 
       Application to create an online calculator
 
