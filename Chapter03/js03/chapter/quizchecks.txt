@@ -1,0 +1,13 @@
+Quick Check 1
+
+1. Show how to create an array named foodMenu containing the text strings “Breakfast”, “Lunch”, and “Dinner” as an array literal and using the new Array() object constructor.
+
+2. Provide a command to return the size of the array customerOrders.
+
+
+3. Provide a command to return the tenth entry in the customerOrders array.
+
+
+4. Provide the expression to reference to fifth inline image in the document.
+
+5. Provide the expression to reference the third element belonging to the blogpost class.
