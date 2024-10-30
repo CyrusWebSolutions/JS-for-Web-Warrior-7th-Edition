@@ -1,13 +1,134 @@
 Quick Check 1
 
-1. Show how to create an array named foodMenu containing the text strings “Breakfast”, “Lunch”, and “Dinner” as an array literal and using the new Array() object constructor.
+1. Show how to create an array named foodMenu containing the text strings “Breakfast”, “Lunch”, and “Dinner” as an array 
+literal and using the new Array() object constructor.
+Using an Array Literal:
+
+
+let foodMenu = ["Breakfast", "Lunch", "Dinner"];
+Explanation: This syntax uses square brackets [] to define an array and directly places the values within it. This is known 
+as an array literal.
+
+Using the new Array() Constructor:
+
+let foodMenu = new Array("Breakfast", "Lunch", "Dinner");
+Explanation: Here, the new Array() constructor is used to create an array and initialize it with values passed as arguments. 
+Each string becomes an element in the foodMenu array.
+
 
 2. Provide a command to return the size of the array customerOrders.
-
+customerOrders.length;
 
 3. Provide a command to return the tenth entry in the customerOrders array.
-
+customerOrders[9];
 
 4. Provide the expression to reference to fifth inline image in the document.
+let img = document.getElementsByTagName("img");
+img[4];
+
+Explanation: document.getElementsByTagName("img") returns a collection of all <img> elements in the document, just like 
+document.images. By accessing img[4], you’re referencing the fifth image (since the collection is zero-indexed). This 
+approach is functionally equivalent to document.images[4].
 
 5. Provide the expression to reference the third element belonging to the blogpost class.
+document.getElementsByClassName("blogpost")[2];
+Explanation: document.getElementsByClassName("blogpost") retrieves a collection of all elements with the class name blogpost. 
+Since this collection is zero-indexed, accessing [2] will give you the third element in the collection.
+
+Quick Check 2
+1. Show how to use a while loop to write the HTML code <td>counter</td> for integer values of counter ranging from 1 to 100 by 1.
+let i = 1;
+
+while (i <= 100) {
+  document.write("<td> " + i + " </td>");
+  i++;
+}
+
+
+2. What is the most important difference between a while loop and a do while loop?
+The do while loop is evaluated after the command block has been executed at least once.
+
+
+3. Provide code for a for loop that writes the following HTML code:
+<td>3</td> <td>6</td> <td>12</td> <td>24</td> <td>48</td> <td>96</td>
+
+function question2() {
+  let i = 1;
+
+  while (i <= 100) {
+    document.write("<td> " + i + " </td>");
+    i++;
+  }
+}
+function question3() {
+  document.write("<br>");
+  
+  for (let i = 3; i <= 96; i *= 2 ) {
+    document.write("<td> " + i + " </td>");
+  }
+}
+
+question2();
+question3();
+
+4. What JavaScript method can be used to insert HTML code just after an element’s opening tag?
+document.insertAdjacentHTML("afterBegin", text);
+
+5. What JavaScript method can be used to apply a function to each element of an array without writing a program loop?
+forEach()
+
+
+Quick Check 3
+1. Provide the code for an if statement that displays an alert window with the message "You passed with an A" if the 
+value of the exam variable is greater than 90.
+function question() {
+  document.write("<br>");
+  let exam = 91;
+  if (exam >= 90) {
+    window.alert("You passed with an A");
+  }
+}
+
+2. Provide the code for an if else statement that displays an alert window with the message "You passed with an A" if 
+the value of the exam variable is greater than 90 and the message "Not an A" if otherwise.
+function question() {
+  document.write("<br>");
+  let exam = 89;
+  if (exam >= 90) {
+    window.alert("You passed with an A");
+  } else if (exam < 90) {
+    window.alert("Not an A");
+  } else {
+    window.alert("Error");
+  }
+  
+}
+
+3. Provide the code for an else if statement that displays the message "You passed with an A" if exam is greater than 
+90, else if exam is greater than 80 the browser displays the message "You passed with a B". else if exam is greater than 
+70, the message "You passed with an C" is displayed, else the message "You did not pass" is displayed.
+function question() {
+  document.write("<br>");
+  let exam = 69;
+  if (exam >= 90) {
+    window.alert("You passed with an A");
+  } else if (exam >= 80) {
+    window.alert("You passed with a B");
+  } else if (exam >= 70) {
+    window.alert("You passed with a C");
+  } else if (exam >= 60) {
+    window.alert("You did not pass");
+  }
+}
+
+4. Provide the general code for a browser test that tests whether or not the browser supports the findIndex() method when 
+applied to an array named xValues.
+
+if (xValues.findIndex) {
+    // Statements using the findIndex() method
+} else {
+    // Statements using an alternate solution
+}
+
+5. How should you write the code for a switch statement to allow more than one condition to be run by the JavaScript interpreter?
+Omit the break command from the different case statements.

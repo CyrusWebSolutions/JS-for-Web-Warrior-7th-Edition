@@ -1,0 +1,201 @@
+1.What is the correct syntax for creating an empty array named taxRules?
+
+Options:
+A. let taxRules = {};
+B. let taxRules;
+C. let taxRules = [];
+D. let taxRules[5];
+Answer: C. let taxRules = [];
+
+Explanation: The square brackets [] are the correct syntax for creating an empty array in JavaScript, 
+signifying an empty array rather than an empty object ({}).
+
+2. Which of the following statements adds the value “oak” as the third element of the trees array?
+
+Options:
+A. trees += "oak";
+B. trees += "","","oak";
+C. trees[2] = "oak";
+D. trees[3] = "oak";
+Answer: C. trees[2] = "oak";
+
+Explanation: Arrays are zero-indexed, so to add "oak" as the third element, we assign it to index 2.
+
+3. Which of the following properties returns the number of elements in an array?
+
+Options:
+A. length
+B. size
+C. elements
+D. indexes
+Answer: A. length
+
+Explanation: The length property returns the number of elements in an array in JavaScript.
+
+4. To create a multidimensional array in JavaScript, you must ________.
+
+Options:
+A. use the new Matrix() object constructor
+B. nest one array within another
+C. load a JavaScript library with special array tools
+D. apply the forEach() array method
+Answer: B. nest one array within another
+
+Explanation: JavaScript multidimensional arrays are made by nesting arrays within arrays to create rows and columns.
+
+5. To reference the element in the third row and fourth column of the multidimensional array xValues, use:
+
+Options:
+A. xValues(3, 4)
+B. xValues[3, 4]
+C. xValues[2][3]
+D. xValues[2, 3]
+Answer: C. xValues[2][3]
+
+Explanation: JavaScript arrays are zero-indexed, so the third row is index 2, and the fourth column is index 3.
+
+6. To reference the third inline image found within the web page document, use:
+
+Options:
+A. document.images.3
+B. document.images[3]
+C. image.2
+D. document.images[2]
+Answer: B. document.images[3]
+
+Explanation: document.images is an array-like collection of images where the third image is at index 2.
+
+7. If you do not include code that changes the counter value in a loop statement, your program will be caught in a(n) ________.
+
+Options:
+A. iteration
+B. condition
+C. fallthrough
+D. infinite loop
+Answer: D. infinite loop
+
+Explanation: Without a changing counter, the loop never meets its stopping condition, leading to an infinite loop.
+
+8. To access HTML elements by the value of their class attribute, which of the following would you use?
+
+Options:
+A. document.getElementsByClassName()
+B. document.getElementByClassName()
+C. document.getElementsByClass()
+D. document.getClasses()
+Answer: A. document.getElementsByClassName()
+
+Explanation: document.getElementsByClassName() is used to retrieve all elements with a specified class name.
+
+9. Each repetition of a program loop is called a(n) ________.
+
+Options:
+A. command block
+B. counter
+C. iteration
+D. while loop
+Answer: C. iteration
+
+Explanation: Each cycle of code execution within a loop is termed an iteration.
+
+10. Posttest loops are ________.
+
+Options:
+A. program loops in which the stopping condition is evaluated before each iteration of the command block
+B. program loops in which the stopping condition is evaluated after the command block has been executed at least once
+C. used in while loops and for loops
+D. loops that have no stopping condition
+Answer: B. program loops in which the stopping condition is evaluated after the command block has been executed at least once
+
+Explanation: A posttest loop executes the loop body at least once before evaluating the stopping condition.
+
+11. Which of the following can be used as part of a for loop to go through all the elements in the xValues array?
+
+Options:
+A. for (let i = 1; i < xValues.length; i++)
+B. for (let i = 0; i <= xValues.length; i++)
+C. for (let i = 0; i < xValues.length; i++)
+D. for (let i = 1; i = xValues.length; i++)
+Answer: C. for (let i = 0; i < xValues.length; i++)
+
+Explanation: Option C correctly iterates over all elements by starting at index 0 and using < to stop before reaching xValues.length.
+
+12. A simple if else statement enables you to specify code for ________ alternatives.
+
+Options:
+A. 2
+B. 3
+C. 4
+D. unlimited
+Answer: A. 2
+
+Explanation: A simple if else statement allows two alternatives: one for if and one for else.
+
+13. To insert HTML code within an element without overwriting code already in that element, use the ________ method.
+
+Options:
+A. innerHTML()
+B. insertAdjacentHTML()
+C. document.write()
+D. insertHTML()
+Answer: B. insertAdjacentHTML()
+
+Explanation: insertAdjacentHTML() adds HTML without overwriting existing content, whereas innerHTML would replace it.
+
+14. The forEach() method ________.
+
+Options:
+A. requires a JavaScript extension
+B. is an example of a pretest loop
+C. is an example of a posttest loop
+D. is used to apply a function to every element within an array without using a program loop
+Answer: D. is used to apply a function to every element within an array without using a program loop
+
+Explanation: The forEach() method applies a function to each element of an array, serving as a built-in array iterator.
+
+15. In an if else statement, the else command block will run when ________.
+
+Options:
+A. the conditional expression is true
+B. the conditional expression is false
+C. the conditional expression is undefined
+D. the conditional expression is falsy
+Answer: B. the conditional expression is false
+
+Explanation: The else block runs only when the if condition evaluates as false.
+
+16. Describe two ways of declaring a JavaScript array.
+
+Answer: let arr = []; or let arr = new Array();
+
+Explanation: An array in JavaScript can be declared with square brackets for an empty array or with the Array constructor 
+for an array object.
+
+17. Provide the code to reference the fourth element in the projectTeam array.
+
+Answer: projectTeam[3]
+
+Explanation: Since arrays are zero-indexed, the fourth element is at index 3.
+
+18. Provide the code to reference the third div element within a web document.
+
+Answer: document.getElementsByTagName("div")[2]
+
+Explanation: getElementsByTagName("div") returns a collection of all div elements, with the third at index 2.
+
+19. Provide the general code of a for loop that loops through all the div elements within a web document.
+
+Answer:
+
+for (let i = 0; i < document.getElementsByTagName("div").length; i++) {
+    // Code to execute for each div element
+}
+Explanation: This loop iterates over all div elements using their length for the stopping condition.
+
+20. Provide code to insert the HTML text string <h1>Main Heading</h1> directly after the opening tag of the div element 
+with the id "Main".
+
+Answer: document.getElementById("Main").insertAdjacentHTML("afterbegin", "<h1>Main Heading</h1>");
+
+Explanation: insertAdjacentHTML("afterbegin", ...) inserts the specified HTML directly after the opening 
+tag of the target element.
