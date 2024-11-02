@@ -3,7 +3,8 @@ Quick Check 1
 1. Describe the three types of program errors.
 Load-time or syntax errors in which the interpreter finds error in the syntax of the code as it initially loads it.
 
-Runtime errors in which the interpret has loaded the code but is unable to run it due to such factors as an unreferenced variable or a mistyped function name.
+Runtime errors in which the interpret has loaded the code but is unable to run it due to such factors as an unreferenced 
+variable or a mistyped function name.
 
 Logic errors in which the program can be interpreted and run but has an incorrect result due to a flaw in the program’s logic.
 2. What is the error in the following code and what type of error is it? document.writ("Hello World");
@@ -13,18 +14,64 @@ The error is a syntax error in which document.writ should have been document.wri
 let firstValue = 10;
 let secondValue = 20;
 let result = firstvalue + secondValue;
-This is a runtime error in which the error occurs because the firstValue variable is written as firstvalue in the final statement of the code.
+This is a runtime error in which the error occurs because the firstValue variable is written as firstvalue in the 
+final statement of the code.
 
 4. If the browser console reports a single syntax error, does that mean there is only one syntax error in the code?
-No. The debugger will stop at the first instance of a syntax errors. There may be others in the code that have not been reached yet.
+No. The debugger will stop at the first instance of a syntax errors. There may be others in the code that have not 
+been reached yet.
 
 
 Quick Check 2
 
-1. The orderCost variable in a long and elaborate program might be incorrectly calculated. Provide code to display the value of the variable within an alert box.
+1. The orderCost variable in a long and elaborate program might be incorrectly calculated. Provide code to display the value 
+of the variable within an alert box.
 
 2. Provide code to write the value of orderCost to the console log.
 
 3. What are three reasons to use the console log approach over the alert box approach?
 
 4. Why would you comment out sections of a program that is producing errors?
+
+
+
+Quick Check 3
+1. What is a breakpoint?
+A breakpoint is a location within the code marking the point where execution is suspended.
+
+2. Explain the difference between stepping into, stepping over, and stepping out of the program execution.
+Stepping in or stepping into executes an individual line of code and then pauses until you instruct the debugger to continue. 
+This feature gives you an opportunity to evaluate program flow and structure as code is being executed.
+
+As you use the Step Into button to move through code, the debuggers stop at each line within every function of the JavaScript 
+program. However, when stepping through a program to trace a logical error, it is convenient to be able 
+to skip functions that you know are functioning correctly. The second option, known as stepping over, allows you to skip 
+function calls. The program still executes each function that you step over, but it appears in each debugger as if a single 
+statement executes.
+
+The final option, stepping out, executes all remaining code in the current function. If the current function was called 
+from another function, all remaining code in the current function executes and the debugger stops at the next statement 
+in the calling function.
+
+3. What is the call stack? How do you use it to aid in debugging a program?
+The call stack is the ordered list maintained by a JavaScript processor containing all the procedures, such as functions, 
+methods, or event handlers, that have been called but have not yet finished processing. Each time a program calls a procedure, 
+the procedure is added to the top of the call stack and then removed after it finishes executing. The ability to view a list 
+showing the contents of the call stack is very useful when tracing logic errors in large programs with multiple functions. 
+Viewing the call stack, along with using tracing commands, 
+makes it easier to locate the specific function causing the problem.
+
+
+Quick Check 4
+Under what circumstances will the catch command block be run by the browser?
+The catch command will be run when an exception or error is found within the code.
+
+Under what circumstances will the finally command block be run by the browser?
+The finally command will always be run, whether the browser encounters an error or not.
+
+Provide code to generate an exception with the message, “Supply a positive value”, if 
+the value of the age variable is less than zero.
+if (age < 0) throw "Supply a positive value";
+
+What must be included within an error handling function to replace the browser’s default error reporting methods?
+return true;

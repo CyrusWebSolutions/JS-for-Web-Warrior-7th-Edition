@@ -1,0 +1,184 @@
+1. What type of error occurs when the interpreter fails to recognize code?
+
+Options:
+A. debugging
+B. syntax
+C. runtime
+D. logic
+Answer: B. syntax
+
+Explanation: Syntax errors occur when the code violates JavaScript's grammar or structure, preventing it from being parsed.
+
+2. ________ errors are problems in the design of a program that prevent it from running as you anticipate.
+
+Options:
+A. Application
+B. Syntax
+C. Logic
+D. Runtime
+Answer: C. Logic
+
+Explanation: Logic errors happen when code runs without breaking but produces incorrect results due to design issues.
+
+3. When a JavaScript interpreter encounters a problem while a program is executing, that problem is called a(n) ________ error.
+
+Options:
+A. application
+B. syntax
+C. logic
+D. runtime
+Answer: D. runtime
+
+Explanation: Runtime errors occur during execution, often due to unexpected conditions like missing variables or failed function calls.
+
+4. Which of the following statements causes a syntax error?
+
+Options:
+A. let firstName = "";
+B. document.write("Available points: " + availPoints);
+C. readyState = true;
+D. "use strict";
+Answer: B. document.write(Available points: " + availPoints);
+
+Explanation: This line is missing the opening quotation mark for "Available points," causing a syntax error.
+
+5. Which of the following statements writes the value of the selection variable to the console?
+
+Options:
+A. console.log("selection");
+B. document.console("selection");
+C. console.alert(selection);
+D. console.log(selection);
+Answer: D. console.log(selection);
+
+Explanation: console.log(selection); writes the actual value of selection to the console, while console.log("selection"); would write the word "selection" instead.
+
+6. Which of the following for statements is logically incorrect?
+
+Options:
+A. for (var count = 10; count <= 0;count++) { document.write(count); }
+B. for (var count = 0; count <= 10; count++) { document.write(count); }
+C. for (var count = 10; count >= 0;count--) { document.write(count); }
+D. for (var count = 5; count >= 0;count--) { document.write(count); }
+Answer: A. for (var count = 10; count <= 0;count++) { document.write(count); }
+
+Explanation: This loop is incorrect because count starts at 10, but the loop condition (count <= 0) is never met, so the loop never executes.
+
+7.Which of the following modes temporarily suspends, or pauses, program execution so that you can monitor values and trace program execution?
+
+Options:
+A. Suspend
+B. Step
+C. Break
+D. Continue
+Answer: C. Break
+
+Explanation: The "Break" mode pauses execution, allowing you to inspect variables and program flow before continuing.
+
+8. Which command executes all the statements in the next function in browser debugging tools?
+
+Options:
+A. Step out
+B. Step over
+C. Step
+D. Step in/into
+Answer: B. Step over
+
+Explanation: "Step over" executes the entire next function without stepping into it line-by-line.
+
+9. After you throw an exception, you use a ________ statement to handle the error.
+
+Options:
+A. try
+B. throw
+C. catch
+D. finally
+Answer: C. catch
+
+Explanation: catch is used to handle an exception that has been thrown, allowing you to respond to the error.
+
+10. In ________, some features are removed from the JavaScript language, while other features require more stringent syntax.
+
+Options:
+A. exception handling
+B. strict mode
+C. debugging tools
+D. debugger mode
+Answer: B. strict mode
+
+Explanation: Strict mode imposes stricter syntax rules and removes certain JavaScript features to improve error checking.
+
+11. Which of the following pieces of information is passed as an argument from a throw statement to a catch statement?
+
+Options:
+A. error number
+B. error message
+C. line number
+D. URL
+Answer: B. error message
+
+Explanation: The throw statement can pass an error message as an argument to the catch block for display or logging.
+
+12. What statement can you add to your code to effectively serve the same role as a breakpoint?
+
+Options:
+A. break;
+B. breakpoint;
+C. debug;
+D. debugger;
+Answer: D. debugger;
+
+Explanation: The debugger; statement pauses code execution in browsers with debugging tools enabled, similar to setting a breakpoint.
+
+13. The Watch window in the debugger lets you monitor the value of a(n) ________ during program execution.
+
+Options:
+A. function
+B. exception handler
+C. expression
+D. statement
+Answer: C. expression
+
+Explanation: The Watch window allows you to monitor expressions, which can include variables and calculations, as they change during execution.
+
+14. The ________ is the ordered list maintained by a JavaScript processor containing all the procedures, such as functions, methods, or event handlers, that have been called but have not yet finished processing.
+
+Options:
+A. Scope window
+B. Watch window
+C. strict mode
+D. call stack
+Answer: D. call stack
+
+Explanation: The call stack is a list of functions waiting to finish execution, maintaining the order of calls.
+
+15. Which of the following exception handling code executes regardless of whether its associated try block throws an exception?
+
+Options:
+A. throw "Please enter your last name.";
+B. catch(lNameError) { return false; }
+C. catch(lNameError) { window.alert(lNameError) return false; }
+D. finally { lNameValid = true; }
+Answer: D. finally { lNameValid = true; }
+
+Explanation: The finally block always executes after a try and catch block, regardless of whether an exception occurred.
+
+16. What is the advantage of tracing errors using the window.alert() method? What is the advantage of using the console.log() method instead?
+
+Answer: window.alert() displays errors as pop-ups, which can immediately capture attention, while console.log() is less intrusive, allowing you to view messages in the console without interrupting program flow.
+
+17. Explain how to debug code by commenting it out.
+
+Answer: Commenting out code lets you temporarily disable parts of your program to isolate problematic sections. This helps identify which lines cause errors by removing them from execution without deleting them.
+
+18. Explain two different ways that a text editor specialized for web development can help you in preventing errors and debugging code.
+
+Answer: A web-focused text editor often includes syntax highlighting, making it easier to spot syntax errors, and code linting, which flags potential issues as you type, helping prevent common errors.
+
+19. When and why should you use exception handling with your JavaScript programs?
+
+Answer: Exception handling should be used when working with potentially error-prone code, such as network requests or user input processing. It prevents your program from crashing and lets you handle errors gracefully.
+
+20. Explain what strict mode is, how to implement it, and how it’s useful in reducing coding errors.
+
+Answer: Strict mode is a JavaScript mode that enforces stricter parsing and error handling. It’s implemented by adding "use strict"; at the top of your script or function. It helps catch common coding mistakes, such as undeclared variables, leading to more reliable code.
