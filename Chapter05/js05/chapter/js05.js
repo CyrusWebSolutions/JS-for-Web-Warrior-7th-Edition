@@ -36,14 +36,28 @@ function createLightbox() {
    lightBox.appendChild(lbPrev);
    lbPrev.id = "lbPrev";
    lbPrev.innerHTML = "&#9664;";
+   lbPrev.onclick = showPrev;
    //Design the lightbox next slide button
    lightBox.appendChild(lbNext);
    lbNext.id = "lbNext";
    lbNext.innerHTML = "&#9654;";
+   lbNext.onclick = showNext;
    //Design the lightbox play-pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id = "lbPlay";
    lbPlay.innerHTML = "&#9199;";
+   let timeID;
+   lbPlay.onclick = function() {
+      if (timeID) {
+         //Stopping the slideshow
+         window.clearInterval(timeID);
+         timeID = undefined;
+      } else {
+         //Starting the slideshow
+         showNext();
+         timeID = window.setInterval(showNext, 1500);
+      }
+   }
    //Design the lightbox images container
    lightBox.appendChild(lbImages);
    lbImages.id = "lbImages";
@@ -54,6 +68,17 @@ function createLightbox() {
       image.src = imgFiles[i];
       image.alt = imgCaptions[i];
       lbImages.appendChild(image);
+   }
+
+   function showNext() {
+      lbImages.appendChild(lbImages.firstElementChild);
+      (currentImg < imgCount) ? currentImg++ : currentImg = 1;
+      lbCounter.textContent = currentImg + " / " + imgCount;
+   }
+   function showPrev() {
+      lbImages.insertBefore(lbImages.lastElementChild, lbImages.firstElementChild);
+      (currentImg > 1) ? currentImg-- : currentImg = imgCount;
+      lbCounter.textContent = currentImg + " / " + imgCount;
    }
 }
 
