@@ -29,3 +29,38 @@ timeID = window.setInterval(checkAnswers, 10000);
 
 4. Provide code to stop the checkAnswers() function from repeating.
 clearInterval(timeID);
+
+
+
+Quick Check 3
+1. Provide code to create a confirmation window with the message “Do you wish to continue?”, 
+storing the response in the continuePlay variable.
+let continuePlay = window.confirm("Do you wish to continue?");
+
+2. Provide code to create a prompt window with the message “Enter your state” with the default value, 
+“Texas”. Store the response in the state variable.
+let state = window.prompt("Enter your state", "Texas");
+
+3. Provide code for the URL “http://www.microsoft.com” in a new browser window named newWin that is 
+600 pixels wide and 400 pixels tall. Store the window object in variable named myWindow.
+let myWindow = window.open("https://www.microsoft", "newWin", "width=600, height=400");
+
+4. Provide code to increase the width of myWindow by 100 pixels and the height by 50 pixels.
+myWindow.resizeBy(100, 500);
+
+5. What do you use the this object for?
+The this object references the owner of a currently running segment of JavaScript code.
+
+
+
+Quick Check 4
+Provide two statements that display the previous page in the browser history.
+window.history.back();
+window.history.go(-1);
+
+What is the difference between the assign() method and the replace() method?
+The replace() method removes the URL of the current page, so that the user won't be able to 
+use the back button to navigate back to the original document.
+
+Provide an expression to return the width of screen after adjusting for browser features such as toolbars, menus, and scrollbars.
+screen.availWidth;

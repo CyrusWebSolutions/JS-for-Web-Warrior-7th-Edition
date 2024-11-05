@@ -1,0 +1,184 @@
+1. The node at the top of the document node tree containing all other nodes is the ________ node.
+
+Options:
+A. parent
+B. root
+C. head
+D. body
+Answer: B. root
+
+Explanation: The root node is the top-level node in the document tree, containing all other elements and nodes.
+
+2. To reference the third child node of a parent node, use ________.
+
+Options:
+A. childNodes[3]
+B. childNodes[4]
+C. childNodes.2
+D. childNodes[2]
+Answer: D. childNodes[2]
+
+Explanation: childNodes is zero-indexed, so childNodes[2] references the third child.
+
+3.To create a node list of all img elements belonging to the slideshow class, use ________.
+
+Options:
+A. document.querySelectorAll("img.slideshow")
+B. document img.slideshow
+C. document.selector("img.slideshow")
+D. document.querySelector("img.slideshow")
+Answer: A. document.querySelectorAll("img.slideshow")
+
+Explanation: querySelectorAll selects all elements matching the specified selector, including elements with the slideshow class.
+
+4. Which of the following is an important difference between node lists and HTML collections?
+
+Options:
+A. HTML collections are created using HTML elements.
+B. Node lists are dynamic, HTML collections are static.
+C. Node lists are static, HTML collections are dynamic.
+D. HTML collections include attributes and text strings.
+Answer: C. Node lists are static, HTML collections are dynamic.
+
+Explanation: Node lists are generally static, whereas HTML collections are live and reflect changes in the document.
+
+5. Which of the following is an action performed by the appendChild() method?
+
+Options:
+A. It adds the node to the end of the parent node’s child list.
+B. It adds the node to the beginning of the parent node’s child list.
+C. It replaces any child nodes of the parent node.
+D. It copies the parent node and adds it as a child of the parent.
+Answer: A. It adds the node to the end of the parent node’s child list.
+
+Explanation: appendChild() appends a node to the end of a parent node's child list.
+
+6. Provide the JavaScript equivalent of the HTML tag: <img id="logo" src="photo1.jpg" />.
+
+Options:
+A. document.logo[src] = "photo1.jpg"
+B. document.getElementById("logo").src = "photo1.jpg"
+C. document[logo].src = "photo1.jpg"
+D. document.image[0].src = "photo1.jpg"
+Answer: B. document.getElementById("logo").src = "photo1.jpg"
+
+Explanation: getElementById accesses the element with id="logo" and assigns the source src attribute.
+
+7. What is the JavaScript equivalent of the HTML class attribute?
+
+Options:
+A. class
+B. classVar
+C. classValue
+D. className
+Answer: D. className
+
+Explanation: The className property is used in JavaScript to access or modify an element's class attribute.
+
+8. Provide the JavaScript equivalent of the HTML tag: <p id="main" style="color: red">
+
+Options:
+A. document.getElementById("main").color = "red";
+B. document.getElementById("main").style = "red";
+C. document.getElementById("main").style.color = "red";
+D. document.getElementById("main").red = true;
+Answer: C. document.getElementById("main").style.color = "red";
+
+Explanation: To change the color, we access style.color on the element with id="main".
+
+9. In JavaScript, the CSS border-color property is entered as ________.
+
+Options:
+A. bordercolor
+B. border-color
+C. border.color
+D. borderColor
+Answer: D. borderColor
+
+Explanation: In JavaScript, CSS properties with hyphens (like border-color) are camel-cased, so borderColor is correct.
+
+10. Which of the following moves the third child of a parent node to the end of the child node list?
+
+Options:
+A. node.appendChild(node.children[3]);
+B. node.lastChild(node.children[2]);
+C. node.appendChild(node.children[2]);
+D. node.moveTo(node.children[2], node.lastChild);
+Answer: C. node.appendChild(node.children[2]);
+
+Explanation: The appendChild() method moves the specified node to the end of the child node list.
+
+11. Which of the following creates a copy of a node including all the node’s descendants?
+
+Options:
+A. node.cloneNode(true);
+B. node.cloneNode(false);
+C. node.copy(deep);
+D. node.copy(true);
+Answer: A. node.cloneNode(true);
+
+Explanation: cloneNode(true) creates a deep copy, which includes all child nodes and descendants.
+
+12. Which method do you use to repeat a function or command block at a set interval?
+
+Options:
+A. setRepeat()
+B. repeatCommand()
+C. setInterval()
+D. repeatFunction()
+Answer: C. setInterval()
+
+Explanation: setInterval() repeatedly executes a function at specified time intervals.
+
+13. What method do you use to create a system dialog box with a message, an OK button, and a Cancel button?
+
+Options:
+A. window.alert()
+B. window.prompt()
+C. window.confirm()
+D. window.open()
+Answer: C. window.confirm()
+
+Explanation: window.confirm() displays a dialog with OK and Cancel buttons, allowing users to confirm or decline.
+
+14. Which of the following provides code to create a browser window that displays the website http://www.example.com with the title “new” sized to 800 pixels wide by 600 pixels tall?
+
+Options:
+A. window.open("new", "http://www.example.com", "width=800, height=600")
+B. window.open("http://www.example.com", "new", "width=800, height=600")
+C. window.open("http://www.example.com", "new", "width=800px, height=600px")
+D. window.create("http://www.example.com", "new", "width=800, height=600")
+Answer: B. window.open("http://www.example.com", "new", "width=800, height=600")
+
+Explanation: window.open() is used to open a new browser window with the specified URL, name, and dimensions.
+
+15. Which object provides information about the URL of a currently displayed website?
+
+Options:
+A. navigator
+B. document
+C. location
+D. screen
+Answer: C. location
+
+Explanation: The location object provides information about the current URL and allows URL manipulations.
+
+16. What is the advantage of using nodes over writing HTML content using the innerHTML property?
+
+Answer: Using nodes allows for better control of individual elements, enables event handling, and avoids potential security issues associated with innerHTML.
+
+17. What is an advantage and disadvantage of using the document.querySelectorAll() method for selecting elements from an HTML document?
+
+Answer: The advantage is that querySelectorAll() allows for precise selection using CSS selectors. The disadvantage is that it returns a static node list, which doesn’t automatically update with changes to the DOM.
+
+18. What are some disadvantages of using popup windows to convey information or content in a web app?
+
+Answer: Popups can be blocked by browsers, are often ignored by users, and may disrupt the user experience, causing frustration.
+
+19. What is the this object and why would you reference it with an event handler or event listener?
+
+Answer: The this object refers to the element that triggered the event, allowing you to access and manipulate the specific element that the event listener is attached to.
+
+20. Why should you use JavaScript to change an element’s class instead of directly changing the element’s style to alter its appearance?
+
+Answer: Changing the class allows for better separation of CSS and JavaScript, making styles easier to manage, reuse, and keep consistent across multiple elements.
